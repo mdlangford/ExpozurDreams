@@ -439,6 +439,10 @@ margin-right: auto;
 left: 0;
 right: 0;
 }
+
+.logo-header {
+  margin-top: -82px;
+}
 /* input[type=text], select, textarea {
     width: 80%;
     padding: 12px;
