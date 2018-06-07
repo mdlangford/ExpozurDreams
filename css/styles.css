@@ -367,6 +367,12 @@ input[type=submit]:hover {
   border: 5px solid #000;
 }
 
+.event-img {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+
  .aboutJD {
     float: left;
     width: 170px;
