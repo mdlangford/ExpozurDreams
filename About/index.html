@@ -46,7 +46,7 @@
        <a class="nav-link" href="#">BLOG</a>
      </li> -->
      <li class="nav-item">
-       <a class="nav-link" href="../coaching">COACHING</a>
+       <a class="nav-link" href="/../coaching/per-growth">COACHING</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="../contact">CONTACT</a>
@@ -99,6 +99,25 @@
   </footer>
 
 </div>
+
+<script>
+// Back to the top Button - When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+
+// When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+ }
+</script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 

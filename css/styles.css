@@ -140,12 +140,12 @@ header {
   background-color: #000000;
 }
 
-figure {
+/* figure {
 margin: auto;
 justify-content: center;
 z-index: 8;
 background-color: #000000;
-}
+} */
 
 video {
   margin: auto;
@@ -206,8 +206,9 @@ input[type=submit]:hover {
   padding: 40px 32px;
 }
 .featured-item{
-  display: flex;
-  /* text-align: center; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  text-align: center;
   /* justify-content: center; */
   /* margin: 12px */
   padding: 12px 24px;
@@ -330,39 +331,41 @@ input[type=submit]:hover {
 
 .email-formbtm {
   /* flex: 50%; */
-  /* display: flex; */
+  display: flex;
   /* flex-flow: row wrap; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* background-color: #adff2f; */
   text-align: center;
   height: 500px;
 
 }
 
-.email-formbtm > *{
+/* .email-formbtm > *{ */
   /* padding: 10px; */
-  box-sizing: border-box;
-  flex: 1 100%;
-}
+  /* box-sizing: border-box; */
+  /* flex: 1 100%; */
+/* } */
 
 .col1-formbtm {
 
-  flex: 50%;
+  /* flex: 50%; */
   /* padding: 20px; */
   width: 50%;
   /* height: 100px; */
-  background-color: green
-  z-index: 2;
+  /* background-color: green */
+  /* z-index: 2; */
 }
 .JD-formbtm {
   display: block;
   /* top: 80px; */
-  width: 25%;
-  height: auto;
-  position: absolute;
-  margin: 0px;
+  width: 50%;
+  /* height: auto; */
+  /* position: absolute; */
+  /* margin: 0px; */
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
-  right: 575px;
+  /* right: 575px; */
   border-radius: 25%;
   border: 5px solid #000;
 }
@@ -386,10 +389,37 @@ input[type=submit]:hover {
 .expoz-her{
   font-family: Georgia, serif;
   text-align: center;
-
 }
 
-.bar-formbtm {
+.perGrowth {
+  background-color: white;
+  margin-bottom: auto;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* padding-bottom: 15px; */
+  text-align: center;
+  box-sizing: border-box;
+  border: double;
+}
+
+.perGrowth p {
+  text-align: justify;
+  text-align-last: auto;
+}
+
+.transbox {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.transbox * {
+  padding: 2%;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* .bar-formbtm { */
  /* flex-direction: column; */
  /* width: auto; */
  /* padding: 20px; */
@@ -398,7 +428,7 @@ input[type=submit]:hover {
  /* flex: center; */
  /* color: adff2f; */
  /* z-index: 2; */
-}
+/* } */
 
 .col2-formbtm {
   position:absolute;
@@ -407,8 +437,8 @@ input[type=submit]:hover {
   height: 500px;
   /* margin: 10px; */
   padding: 40px 12px;
-  background-color: #adff2f;
-  z-index: -1;
+  background-color: white;
+  /* z-index: -1; */
 
  }
 
@@ -424,13 +454,13 @@ input[type=submit]:hover {
 }
 }
 
-input[type=text], [type=email] {
-    /* width: 100%; */
-    padding: 12px 20px;
-    margin: 8px 0;
+/* input[type=text], [type=email] { */
+    /* width: 60%; */
+    /* padding: 12px 20px;
+    margin: 8px 0; */
     /* display: inline-block; */
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    /* border: 1px solid #ccc;
+    border-radius: 4px; */
     /* box-sizing: border-box; */
 }
 
@@ -440,20 +470,43 @@ input[type=submit] {
   margin: 8px 0;
 }
 
-.ezLogo {
+/* .ezLogo {
 position: absolute;
 margin-top: -500px;
 margin-left: auto;
 margin-right: auto;
 left: 0;
 right: 0;
-}
+} */
 
 .logo-header {
   margin-top: -82px;
+  z-index: -50;
 }
-/* input[type=text], select, textarea {
-    width: 80%;
+
+input[type=text], input[type=email], input[type=tel] {
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+
+/* .userContactinfo > input[type=text], input[type=email], input[type=tel] {
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+} */
+
+select, textarea {
+    width: 75%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -461,7 +514,7 @@ right: 0;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-} */
+}
 
 input[type=submit]:hover {
     background-color: #45a049;
@@ -479,6 +532,17 @@ footer {
   background-color: #000
   /* background-color: rgba(0,0,0,0.7) */
 }
+
+  #proofpro {
+    background-image: radial-gradient(orange, yellow);
+    background-blend-mode: screen;
+    padding: 5%;
+  }
+
+  #dayDream {
+    background: url(/../images/seedling.jpg) center center no-repeat;
+    background-size: cover;
+  }
 
   #myBtn {
     display: none;

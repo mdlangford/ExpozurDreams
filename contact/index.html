@@ -46,7 +46,7 @@
        <a class="nav-link" href="#">BLOG</a>
      </li> -->
      <li class="nav-item">
-       <a class="nav-link" href="../coaching">COACHING</a>
+       <a class="nav-link" href="/../coaching/per-growth">COACHING</a>
      </li>
      <li class="nav-item active">
        <a class="nav-link" href="../contact">CONTACT</a>
@@ -68,24 +68,27 @@
 
   <div class="content">
 
-    <form action="https://formspree.io/md_langford@yahoo.com" method="POST">
+    <form action="https://formspree.io/expozurdeams@gmail.com" method="POST">
 
-    <div class="user-contact information">
-      <label for="fname">First Name</label><br>
-      <input type="text" name="firstname" placeholder="First Name" size="100" autofocus required><br>
+    <div class="userContactinfo">
+      <label for="fname">First Name*</label><br>
+      <input type="text" name="firstname" placeholder="First Name" autofocus required><br>
 
-      <label for="lname">Last Name</label><br>
-      <input type="text" name="lastname" placeholder="Last Name" size="100" required><br>
+      <label for="lname">Last Name*</label><br>
+      <input type="text" name="lastname" placeholder="Last Name" required><br>
 
       <label for="country">Country</label><br>
       <select id="country" name="country">
         <option value="australia">Australia</option>
         <option value="canada">Canada</option>
         <option value="usa">USA</option>
-      </select>
+      </select><br>
       <br>
-      <label for="email">Email</label><br>
-      <input type="email" name="userEmail" placeholder="your.email@example.com" required><br><br>
+
+      <label for="email">Email*</label><br>
+      <input type="email" name="userEmail" placeholder="your.email@example.com" required><br>
+      <label for="phone">Phone*</label><br>
+      <input type="tel" name="telphone" placeholder="218-555-1234" required><br><br>
     </div>
 
     <div class="contact reason">
@@ -94,13 +97,13 @@
         <input type="radio" name="subject" value="speaker" checked><span>Public Speaker </span>
         <input type="radio" name="subject" value="other" checked><span>Something else</span>
       </label>
-    </div>
+    </div><br>
 
     <div class="newsletter">
       <input type="checkbox" name="optin" value="trusting" checked>Yes, Subscribe me to your newsletter!
 
     </div>
-
+     <br>
     <div class="marketing">
       <label for="marketing">How did you hear about me?</label><br>
       <select name="marketing">
@@ -114,14 +117,14 @@
           <option value="networking">We met at a networking event</option>
           <option value="referral">Personal referral</option>
           <option value="random">We met somewhere else</option>
-        </optgroup>
+        </optgroup><br><br>
         <option value="other">Other</option>
       </select>
-    </div>
+    </div><br>
 
     <div class="addition comments">
-      <label for="other">Other</label><br>
-      <textarea name="user_message" rows="8" cols="40"></textarea>
+      <label for="other">Other:</label><br>
+      <textarea name="user_message" placeholder="Your message here..." rows="8" cols="40"></textarea>
     </div>
 
     <div class="submit button">
@@ -138,6 +141,25 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
     <p><small>&copy ExpozurDreams 2018 | SITE BY MDL </small></p>
   </footer>
+
+  <script>
+  // Back to the top Button - When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+  // When the user clicks on the button, scroll to the top of the document
+   function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+   }
+  </script>
 
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
