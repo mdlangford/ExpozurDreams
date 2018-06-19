@@ -319,6 +319,7 @@ video {
 
 input[type=submit] {
   background-color: teal;
+  color: white;
   padding: 14px 20px;
   border-radius: 8px;
   margin: 8px 0;
@@ -338,7 +339,7 @@ input[type=text], input[type=email], input[type=tel] {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 select, textarea {
