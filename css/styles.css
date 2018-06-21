@@ -173,6 +173,7 @@ video {
   border: 4px solid #adff2f;
   text-align: center;
   justify-content: center;
+  overflow: auto;
 
 }
 
@@ -301,14 +302,15 @@ video {
  }
 
 @media screen and (max-width: 600px) {
+  .email-formbtm {
+    display: block;
+}
 .col1-formbtm, .col2-formbtm {
   position: relative;
   width: 100%;
 }
 .col1-formbtm img {
   position: relative;
-  left: 30%;
-  width: 250px;
 }
 }
 
