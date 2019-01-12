@@ -243,15 +243,15 @@ video {
 }
 
 .event-img {
-  /* float: right; */
-  display: block;
+  float: right;
+  /* display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   width: 50%;
   /* width: 400px; */
   height: auto;
   border: 5px solid white;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
   border-radius: 5%;
 }
 
